@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+int i,j;
+char *a;
+scanf("%s",a);
+i=0;
+while(*(a+i)!='\0')
+i++;
+for(j=i-1;j>=0;j--)
+printf("%c",*(a+j));
+return 0;
+}
