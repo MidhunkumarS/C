@@ -12,10 +12,10 @@ int main(void)
 	}
 	if(p==a)
 	{
-	printf("It is a palindrome");
+	printf("yes");
 	}
 	else
 	{
-		printf("It is not a palindrome");
+		printf("no");
 	}
 }
