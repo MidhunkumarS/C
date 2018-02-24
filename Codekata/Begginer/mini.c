@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(void)
 {
-	int a[100],n,i,j,max;
+	int a[100],n,i,j,min;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -11,9 +11,9 @@ int main(void)
 	{
 		if(a[0]<a[i])
 			{
-				max=a[i];
+				min=a[i];
 			}
 	}
-	printf("%d",max);
+	printf("%d",min);
 	return 0;
 }
