@@ -5,11 +5,12 @@ int main(void)
 	char a[100];
 	int i,j=0;
 	gets(a);
-	for(i=0;i!='\0';++i)
+	for(i=0;i<=strlen(a);i++)
 	{
 		if(a[i]!=' ')
 		{
 			a[j++]=a[i];
+			
 		}
 	}
 	a[j]='\0';
