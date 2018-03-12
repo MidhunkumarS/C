@@ -4,6 +4,7 @@ int main(void)
 	int a[100];
 	int i,j,n,k;
 	scanf("%d",&n);
+	int temp=0;
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
@@ -25,6 +26,17 @@ int main(void)
 }
 for(i=0;i<n;i++)
 {
+	if(a[i]>a[i+1])
+	{
+		temp=a[i];
+		a[i]=a[i+1];
+		a[i+1]=temp;
+	}
+}
+
+for(i=0;i<n;i++)
+{
+		
 	printf("%d",a[i]);
 }
 return 0;
